@@ -3,9 +3,19 @@ import reactLogo from './assets/react.svg'
 import viteLogo from './assets/vite.svg'
 import heroImg from './assets/hero.png'
 import './App.css'
+import Navbar from './components/Navbar'
+import Sidebar from './components/Sidebar'
 
-function App() {
- return <h1 className='text-yellow-200 text-2xl'>hello</h1>
-}
 
-export default App
+const App = () => {
+
+  return (
+    <div>
+      
+       <Navbar /> 
+       <Sidebar />
+       
+    </div>
+  );
+};
+export default App;
