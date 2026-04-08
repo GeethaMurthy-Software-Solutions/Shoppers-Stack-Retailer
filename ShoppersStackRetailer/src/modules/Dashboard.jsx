@@ -15,7 +15,7 @@ import {
 
 import { Package, ShoppingCart, Truck, Star } from "lucide-react";
 
-/* ---------------- DATA ---------------- */
+
 
 const data = [
   { month: "Jan", orders: 500, revenue: 2 },
@@ -39,7 +39,7 @@ const productData = [
   { name: "Out", value: 20 },
 ];
 
-/* ---------------- CARDS ---------------- */
+
 
 const cards = [
   {
@@ -68,7 +68,7 @@ const cards = [
   },
 ];
 
-/* ---------------- COMPONENTS ---------------- */
+
 
 const OrderStatus = () => (
   <div className="bg-white p-4 rounded-xl shadow-sm h-[260px] sm:h-[280px] md:h-[300px]">
@@ -167,12 +167,11 @@ const RevenueChart = () => (
   </div>
 );
 
-/* ---------------- MAIN DASHBOARD ---------------- */
 
 const Dashboard = () => {
   return (
     <div className="p-3 sm:p-5 bg-gray-100 min-h-screen flex flex-col gap-5">
-      {/* Header */}
+     
       <div>
         <h1 className="text-lg sm:text-xl font-bold">Dashboard</h1>
         <p className="text-gray-500 text-xs sm:text-sm">
@@ -180,7 +179,7 @@ const Dashboard = () => {
         </p>
       </div>
 
-      {/* Cards */}
+    
       <div className="grid grid-cols-2 md:grid-cols-4 gap-3 sm:gap-4">
         {cards.map(({ title, value, icon: Icon, color }) => (
           <div
@@ -196,13 +195,13 @@ const Dashboard = () => {
         ))}
       </div>
 
-      {/* Top Row */}
+    
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-5">
         <OrderStatus />
         <ProductOverview />
       </div>
 
-      {/* Bottom Row */}
+     
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-5">
         <OrdersTrend />
         <RevenueChart />
