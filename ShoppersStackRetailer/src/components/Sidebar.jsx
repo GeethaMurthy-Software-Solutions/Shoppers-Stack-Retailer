@@ -1,10 +1,11 @@
 import React from "react";
 import { FaStore, FaBox, FaStar, FaReceipt } from "react-icons/fa";
 import { MdDashboard } from "react-icons/md";
+import { Link } from "react-router-dom";
 
 const Sidebar = () => {
   const menuItems = [
-    { name: "Dashboard", icon: <MdDashboard />, active: true },
+    { name: "Dashboard", icon: <MdDashboard />, active: true,link:"/landingpage" },
     { name: "Store Profile", icon: <FaStore /> },
     { name: "Products", icon: <FaBox /> },
     { name: "Orders", icon: <FaReceipt /> },
@@ -17,7 +18,8 @@ const Sidebar = () => {
       {/* Menu */}
       <ul className="flex flex-col w-full">
         {menuItems.map((item, index) => (
-          <li
+         <Link to={item.link}>
+           <li
             key={index}
             className={`flex items-center gap-4 px-6 py-3 cursor-pointer
               ${item.active ? "bg-black text-white" : "text-gray-600 hover:bg-gray-50"}
@@ -26,6 +28,7 @@ const Sidebar = () => {
             <span className="text-xl">{item.icon}</span>
             <span className="text-sm font-medium">{item.name}</span>
           </li>
+        </Link>
         ))}
       </ul>
 
