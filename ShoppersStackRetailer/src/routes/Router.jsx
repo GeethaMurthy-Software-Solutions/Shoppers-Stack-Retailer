@@ -13,7 +13,7 @@ let routes =createBrowserRouter([
   {
     path:'/login',
     element:<Login/>
-  }
+  },
    {
         path: "/landingpage",
         element: <AdminLayout />,

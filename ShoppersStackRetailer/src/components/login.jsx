@@ -36,10 +36,10 @@ const Login = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    if (validate()) {
+    // if (validate()) {
       alert("Login Successful");
       navigate("/landingpage");
-    }
+    // }
   };
 
   const handleChange = (e) => {
