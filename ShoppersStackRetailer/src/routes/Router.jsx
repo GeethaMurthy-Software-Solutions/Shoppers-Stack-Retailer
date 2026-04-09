@@ -6,6 +6,7 @@ import Login from "../components/login";
 import AdminLayout from "../components/AdminLayout";
 import Dashboard from "../modules/Dashboard";
 import StoreProfile from "../components/StoreProfile";
+import ProductsML from "../components/ProductsML";
 import Reviews from "../components/Reviews";
 import Orders from "../components/Orders";
 let routes =createBrowserRouter([
@@ -34,8 +35,12 @@ let routes =createBrowserRouter([
               element:<Reviews/>
             },
             {
-              path : "/landingpage/orders",
+              path : "/landingpage/ordersc",
               element:<Orders/>
+            },
+            {
+              path : "/landingpage/productManagement",
+              element : <ProductsML />,
             }
           ]
     }
