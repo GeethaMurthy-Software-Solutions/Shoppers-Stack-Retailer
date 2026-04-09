@@ -34,67 +34,58 @@ const ProductsML = () => {
   return (
     <div className="min-h-screen bg-gray-100 p-3">
 
-      {/* Header */}
       <h1 className="text-xl font-bold mb-4 flex items-center gap-3 pt-4">
         <GoArrowLeft /> Product Management
       </h1>
 
-      {/* Top boxes */}
       <div className="flex gap-3 mb-6 pt-9">
         <div className=" border-gray-300 rounded bg-white flex-1 h-20 relative p-3">
 
-              {/* Image - top right */}
               <img
                 className="h-5 w-5 absolute top-2 right-2"
                 src={hourglassespml}
                 alt=""
               />
 
-              {/* Content */}
               <div className="flex flex-col justify-center items-center h-full">
                 <p className="text-gray-400 text-sm">ALL PRODUCTS</p>
-                <h5 className="text-sm font-semibold">140</h5>
+                <h1 className="text-2xl font-semibold">140</h1>
               </div>
           </div>
 
           <div className=" border-gray-300 rounded bg-white flex-1 h-20 relative p-3">
-
-              {/* Image - top right */}
               <img
                 className="h-5 w-5 absolute top-2 right-2"
                 src={tumbpml}
                 alt=""
               />
 
-              {/* Content */}
+              
               <div className="flex flex-col justify-center items-center h-full">
                 <p className="text-gray-400 text-sm">ACTIVE</p>
-                <h5 className="text-sm font-semibold">1,247</h5>
+                <h5 className=" text-2xl font-semibold">1,247</h5>
               </div>
           </div> 
 
           <div className=" border-gray-300 rounded bg-white flex-1 h-20 relative p-3">
 
-              {/* Image - top right */}
               <img
                 className="h-5 w-5 absolute top-2 right-2"
                 src={nostockpml}
                 alt=""
               />
 
-              {/* Content */}
+             
               <div className="flex flex-col justify-center items-center h-full">
                 <p className="text-gray-400 text-sm"> OUT OF STOCK</p>
-                <h5 className="text-sm font-semibold">140</h5>
+                <h5 className="text-2xl font-semibold">32</h5>
               </div>
           </div>
         
       </div>
 
-      {/* Main Container */}
       <div className="bg-white rounded-2xl">
 
-        {/* Search */}
         <div className="relative p-5 h-17 flex gap-10 text-xs">
           <FiSearch className="absolute left-7 top-1/2 -translate-y-1/2 text-gray-400" />
           <input
@@ -116,21 +107,19 @@ const ProductsML = () => {
 
         <hr className="text-gray-200" />
 
-        {/* Products Grid */}
         <div className="grid grid-cols-2 md:grid-cols-4 gap-18 p-4 pt-8">
           {products.map((product) => (
             <div
               key={product.id}
               className="bg-white rounded shadow hover:shadow-md transition p-3 flex gap-2 h-35"
             >
-              {/* Image */}
+
               <img
                 src={product.image}
                 alt={product.name}
                 className="h-24 w-20 object-contain"
               />
 
-              {/* Content */}
               <div className="flex flex-col justify-between flex-1 ">
                 <div className="space-y-1 ">
                   <h2 className="text-[10px]  font-semibold">
@@ -150,7 +139,6 @@ const ProductsML = () => {
                   </p>
                 </div>
 
-                {/* Actions */}
                 <div className="flex gap-2 mt-2 justify-center ">
                  <button className="flex items-center justify-center w-5 h-4 rounded-4xl hover:border-gray-200 bg-gray-200">
                       <FaRegEdit className="w-2.5" />
@@ -171,10 +159,8 @@ const ProductsML = () => {
           ))}
         </div>
 
-        {/* HR inside layout */}
         <hr className=" text-gray-200" />
 
-        {/* Pagination */}
         <div className="flex justify-end p-4 gap-2">
           {[<MdKeyboardArrowLeft />,1, 2, 3, <MdKeyboardArrowRight />].map((num) => (
             <button
