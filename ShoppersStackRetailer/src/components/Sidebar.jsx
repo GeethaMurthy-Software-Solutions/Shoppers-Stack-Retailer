@@ -10,7 +10,7 @@ const Sidebar = ({ isOpen, closeSidebar }) => {
     { name: "Dashboard", icon: <MdDashboard />, link:"/landingpage" },
     { name: "Store Profile", icon: <FaStore />,link:'/landingpage/storeprofile'},
     { name: "Products", icon: <FaBox /> },
-    { name: "Orders", icon: <FaReceipt /> },
+    { name: "Orders", icon: <FaReceipt />, link:"/landingpage/orders" },
     { name: "Reviews", icon: <FaStar /> ,link:'/landingpage/reviews'},
   ];
 

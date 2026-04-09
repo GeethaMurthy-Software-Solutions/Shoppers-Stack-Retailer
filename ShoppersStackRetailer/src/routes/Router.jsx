@@ -7,6 +7,7 @@ import AdminLayout from "../components/AdminLayout";
 import Dashboard from "../modules/Dashboard";
 import StoreProfile from "../components/StoreProfile";
 import Reviews from "../components/Reviews";
+import Orders from "../components/Orders";
 let routes =createBrowserRouter([
   {
     path : "/",
@@ -31,6 +32,10 @@ let routes =createBrowserRouter([
             {
               path:'/landingpage/reviews',
               element:<Reviews/>
+            }
+            {
+              path : "/landingpage/orders",
+              element:<Orders/>
             }
           ]
     }
