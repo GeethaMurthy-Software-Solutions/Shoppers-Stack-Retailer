@@ -32,7 +32,7 @@ let routes =createBrowserRouter([
             {
               path:'/landingpage/reviews',
               element:<Reviews/>
-            }
+            },
             {
               path : "/landingpage/orders",
               element:<Orders/>
