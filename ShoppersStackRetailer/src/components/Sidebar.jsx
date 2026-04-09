@@ -11,7 +11,7 @@ const Sidebar = ({ isOpen, closeSidebar }) => {
     { name: "Store Profile", icon: <FaStore />,link:'/landingpage/storeprofile'},
     { name: "Products", icon: <FaBox /> },
     { name: "Orders", icon: <FaReceipt /> },
-    { name: "Reviews", icon: <FaStar /> },
+    { name: "Reviews", icon: <FaStar /> ,link:'/landingpage/reviews'},
   ];
 
   return (

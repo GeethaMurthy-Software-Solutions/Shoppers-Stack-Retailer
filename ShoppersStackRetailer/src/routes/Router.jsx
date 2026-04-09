@@ -6,6 +6,7 @@ import Login from "../components/login";
 import AdminLayout from "../components/AdminLayout";
 import Dashboard from "../modules/Dashboard";
 import StoreProfile from "../components/StoreProfile";
+import Reviews from "../components/Reviews";
 let routes =createBrowserRouter([
   {
     path : "/",
@@ -26,6 +27,10 @@ let routes =createBrowserRouter([
             {
               path:'/landingpage/storeprofile',
               element:<StoreProfile/>
+            },
+            {
+              path:'/landingpage/reviews',
+              element:<Reviews/>
             }
           ]
     }
