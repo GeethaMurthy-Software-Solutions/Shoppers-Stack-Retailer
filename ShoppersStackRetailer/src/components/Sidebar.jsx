@@ -8,7 +8,7 @@ const Sidebar = ({ isOpen, closeSidebar }) => {
 
   const menuItems = [
     { name: "Dashboard", icon: <MdDashboard />, link:"/landingpage" },
-    { name: "Store Profile", icon: <FaStore /> },
+    { name: "Store Profile", icon: <FaStore />,link:'/landingpage/storeprofile'},
     { name: "Products", icon: <FaBox /> },
     { name: "Orders", icon: <FaReceipt /> },
     { name: "Reviews", icon: <FaStar /> },

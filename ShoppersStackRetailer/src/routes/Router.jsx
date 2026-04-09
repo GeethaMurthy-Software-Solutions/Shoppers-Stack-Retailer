@@ -5,6 +5,7 @@ import { createBrowserRouter } from "react-router-dom";
 import Login from "../components/login";
 import AdminLayout from "../components/AdminLayout";
 import Dashboard from "../modules/Dashboard";
+import StoreProfile from "../components/StoreProfile";
 let routes =createBrowserRouter([
   {
     path : "/",
@@ -22,6 +23,10 @@ let routes =createBrowserRouter([
                 index: true,
                 element: <Dashboard />
             },
+            {
+              path:'/landingpage/storeprofile',
+              element:<StoreProfile/>
+            }
           ]
     }
       
